@@ -1,0 +1,59 @@
+# Exclure les fichiers inutiles au dépôt
+
+# Fichiers générés automatiquement
+*.class
+*.log
+*.tmp
+*.swp
+*.out
+*.bak
+
+# Base de données H2
+*.mv.db
+*.trace.db
+
+# Répertoires de build (back-end)
+target/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Node.js (front-end)
+node_modules/
+golden-frontend/node_modules/**
+dist/
+.angular/
+!package.json
+!angular.json
+!tsconfig.json
+!src/**/*.ts
+!src/**/*.html
+!src/**/*.css
+!src/**/*.scss
+!src/**/*.json
+
+# Fichiers Maven
+.mvn/
+pom.xml
+
+# Fichiers IDE
+.idea/
+*.iml
+*.ipr
+.classpath
+.project
+.settings/
+.vscode/
+
+# Logs
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Spring Boot spécifiques
+HELP.md
+.env
+application.properties
+application.yml
